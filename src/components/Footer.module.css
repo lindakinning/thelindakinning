@@ -1,0 +1,116 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1.5px solid var(--ink);
+}
+
+.left {
+  padding: 3.5rem 3rem;
+  background-color: var(--linen);
+  border-right: 1.5px solid var(--ink);
+}
+
+.name {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: var(--ink);
+}
+
+.nameFirst {
+  display: block;
+}
+
+.nameLast {
+  display: inline-block;
+  position: relative;
+}
+
+/* Static yellow highlight bar (no animation in footer) */
+.highlight {
+  position: absolute;
+  bottom: 3px;
+  left: -3px;
+  right: -3px;
+  height: 13px;
+  background-color: var(--yellow);
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.right {
+  padding: 3.5rem 3rem;
+  background-color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.connectLabel {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.connectQuote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--linen);
+  line-height: 1.4;
+}
+
+.connectBtn {
+  display: inline-block;
+  background-color: var(--yellow);
+  color: var(--ink);
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1.5px solid var(--ink);
+  width: fit-content;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.connectBtn:hover {
+  background-color: #d4b03c;
+  transform: translateX(4px);
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    padding: 2rem 1.25rem;
+    border-right: none;
+    border-bottom: 1.5px solid var(--ink);
+  }
+
+  .right {
+    padding: 2.5rem 1.25rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .connectBtn {
+    max-width: 280px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}

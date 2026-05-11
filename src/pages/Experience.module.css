@@ -1,0 +1,388 @@
+/* ════════════════════════════════════
+   PAGE
+════════════════════════════════════ */
+.page {
+  min-height: 100vh;
+  background-color: var(--linen);
+}
+
+/* ════════════════════════════════════
+   PAGE HEADER
+════════════════════════════════════ */
+.pageHeader {
+  padding: 4rem 2.5rem 2.5rem;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.pageTitle {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.pageSubtitle {
+  font-style: italic;
+  color: var(--muted);
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ════════════════════════════════════
+   FILTER TABS
+════════════════════════════════════ */
+.filterRow {
+  display: flex;
+  border-bottom: 1.5px solid var(--ink);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.filterRow::-webkit-scrollbar {
+  display: none;
+}
+
+.filterTab {
+  padding: 0.9rem 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--ink);
+  background: none;
+  border: none;
+  border-right: 1.5px solid var(--ink);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.filterTab:last-child {
+  border-right: none;
+}
+
+.filterTab:hover {
+  background-color: var(--ink);
+  color: var(--linen);
+}
+
+.filterTabActive {
+  background-color: var(--terra);
+  color: #ffffff;
+}
+
+.filterTabActive:hover {
+  background-color: var(--terra);
+  color: #ffffff;
+}
+
+/* ════════════════════════════════════
+   TIMELINE
+════════════════════════════════════ */
+.timeline {
+  padding-bottom: 5rem;
+}
+
+.yearGroup {
+  /* groups flow naturally — no gap needed */
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 110px 44px 1fr;
+  align-items: stretch;
+}
+
+/* Year column */
+.yearCol {
+  padding: 2.2rem 1rem 0 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.yearLabel {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+/* Line column */
+.lineCol {
+  display: flex;
+  justify-content: center;
+}
+
+.lineTrack {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Continuous vertical line */
+.lineTrack::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1.5px;
+  background-color: var(--ink);
+  transform: translateX(-50%);
+}
+
+/* Dot */
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--linen);
+  border: 1.5px solid var(--ink);
+  position: relative;
+  z-index: 1;
+  margin-top: 2.4rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.dot:hover {
+  background-color: var(--terra);
+  transform: scale(1.2);
+}
+
+.dotVenture {
+  background-color: var(--yellow);
+}
+
+.dotExpanded {
+  background-color: var(--terra);
+  transform: scale(1.15);
+}
+
+.dotVenture:hover,
+.dotVenture.dotExpanded {
+  background-color: var(--terra);
+}
+
+/* Entry column */
+.entryCol {
+  padding: 1.75rem 2.5rem 1.75rem 1rem;
+}
+
+.entry {
+  border: 1.5px solid transparent;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+.entry:hover {
+  border-color: rgba(26, 26, 26, 0.2);
+}
+
+.entryOpen {
+  border-color: var(--ink) !important;
+}
+
+/* Entry header */
+.entryHeader {
+  cursor: pointer;
+  padding: 0.9rem;
+  user-select: none;
+  outline: none;
+}
+
+.entryHeader:focus-visible {
+  outline: 2px solid var(--terra);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.entryMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.tagRow {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.tagPill {
+  font-size: 0.63rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.entryDate {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.entryTitle {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.chevron {
+  font-size: 0.85rem;
+  color: var(--muted);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* Entry body (expanded) */
+.entryBody {
+  padding: 0 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.bodyText {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--ink);
+}
+
+.learnedBlock {
+  border-left: 3px solid var(--yellow);
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.learnedLabel {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+}
+
+.learnedText {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+/* Mobile year label — hidden on desktop */
+.yearMobile {
+  display: none;
+}
+
+/* ════════════════════════════════════
+   TABLET — 768px
+════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* Page header */
+  .pageHeader {
+    padding: 2rem 1.25rem 1.5rem;
+  }
+
+  /* Filter tabs: already scrollable, just ensure touch-friendly */
+  .filterTab {
+    padding: 0.9rem 1.1rem;
+    font-size: 0.8rem;
+    min-height: 44px;
+  }
+
+  /* Timeline: collapse 3-col layout to single column */
+  .row {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .yearCol {
+    display: none;
+  }
+
+  .lineCol {
+    display: none;
+  }
+
+  .entryCol {
+    padding: 0.5rem 1.25rem;
+  }
+
+  /* Entry becomes a card with yellow left border */
+  .entry {
+    border-left: 3px solid var(--yellow);
+    border-radius: 0 6px 6px 0;
+    margin-left: 8px;
+    padding-left: 4px;
+  }
+
+  /* Show year inside each entry on mobile */
+  .yearMobile {
+    display: inline;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+    margin-right: 6px;
+  }
+
+  .entryHeader {
+    padding: 0.75rem;
+  }
+
+  .entryBody {
+    padding: 0 0.75rem 1rem;
+  }
+
+  .bodyText {
+    font-size: 0.9rem;
+  }
+}
+
+/* ════════════════════════════════════
+   PHONE — 480px
+════════════════════════════════════ */
+@media (max-width: 480px) {
+
+  .pageHeader {
+    padding: 1.5rem 1rem 1.25rem;
+  }
+
+  .entryCol {
+    padding: 0.5rem 1rem;
+  }
+
+  .entryTitle {
+    font-size: 0.95rem;
+  }
+}
