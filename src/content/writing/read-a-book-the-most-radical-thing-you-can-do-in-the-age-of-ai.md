@@ -5,13 +5,13 @@ tags: AI, Technology, Education
 description: In an age of infinite AI-generated content, deep reading is our strongest defense against atrophied attention and compromised thinking. Reading builds the cognitive muscle we need to use AI wisely instead of being used by it.
 ---
 
-That's it. If I only had 15 words to broadcast one of my most deeply held beliefs about AI, this is what I'd put on a billboard. 
+**That's it.** If I only had 15 words to broadcast one of my most deeply held beliefs about AI, this is what I'd put on a billboard. 
 
 But luckily, we have longer form media at our disposal. Dear reader, I believe long form reading can save us from the worst consequences of AI: endless content, ravaged attention spans, and the devaluation of human skill and human beings. 
 
-So please, read on like it's 2008 and your attention hasn't been pinged to death. 
+**So please, read on like it's 2008 and your attention hasn't been pinged to death.** 
 
-There's a promise at the center of the AI moment: infinite access to information. 
+There's a promise at the center of the AI moment: *infinite access to information.* 
 
 Now of course not all information is created equally and not all content is knowledge but for the sake of simplicity I'm using information loosely here — the way the tech industry uses it. Media. Content. The stuff we read and engage with. And wow. What a promise. The entire sum of human knowledge, distillable, searchable, summarizable, available to anyone with a browser. It would be churlish not to acknowledge how extraordinary that is. 
 
@@ -23,13 +23,11 @@ The teachers knew. They've been ringing the alarm for over a decade. Kids who ca
 
 The data backs them up. Year over year, reading rates decline. Time spent with long-form text shrinks. Maryanne Wolf's Reader, Come Home — one of the most important books I read last year — traces what actually happens to the reading brain when we stop using it. The neural pathways built through sustained reading — pathways for empathy, critical analysis, inference, reflection — don't just sit idle. They weaken. The brain is plastic in both directions.
 
-Enter the humble book. A time tested technology for building human attention and transforming content (words) into knowledge. 
+**Enter the humble book.** A time tested technology for building human attention and transforming content (words) into knowledge. 
 
 Here's the inference I think is sound even if correlation isn't causation: atrophying attention spans and rising susceptibility to misinformation are not unrelated to declining reading habits. When we stop practicing the slow work of following a complex argument across two hundred pages, we lose the muscle for it. And a person without that muscle is far more vulnerable to the compressed, decontextualized, emotionally charged information that dominates our feeds.
 
-This was the condition before AI. Now we've introduced a technology that, among its many gifts, offers to read for us.
-
-I want to be careful here, because I'm not making a simple anti-AI argument. I use these tools. I build with them and I teach with them. I believe they can be genuinely useful.
+This was the condition before AI. Now we've introduced a technology that, among its many gifts, offers to read for us. I want to be careful here, because I'm not making a simple anti-AI argument. I use these tools. I build with them and I teach with them. I believe they can be genuinely useful.
 
 But I keep thinking about the rat park experiments. In the famous studies, isolated rats with access to heroin became addicted. It sounds like straightforward case of drugs = bad.
 
@@ -48,7 +46,7 @@ All this from a BOOK! An invention that predates the first century!
 
 So here is my hot take, offered to AI evangelists and AI skeptics with equal conviction:
 
-The most radical thing you can do in the age of AI is read a book.
+**The most radical thing you can do in the age of AI is read a book.**
 
 Not as protest or nostalgia but as the practice we all need to guard against becoming a cage full of addicted rats. 
 
