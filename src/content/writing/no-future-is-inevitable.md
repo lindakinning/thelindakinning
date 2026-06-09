@@ -6,8 +6,6 @@ description: "The arc of justice doesn't always bend forward — but that means 
 readTime: "5 min read"
 ---
 
-# No Future Is Inevitable
-
 I am old enough to start sentences with "I'm old enough to remember when…" and reminisce with political optimism.
 
 I remember in 2016 thinking I'm going to get to have humane national maternity leave policies by the time I have kids. Or in 2020 believing our country was finally reckoning with our violent history of race and oppression. Or in 2021 thinking that the world-altering COVID-19 pandemic gave us all the evidence we needed that we could in fact make big, rapid, and coordinated changes to our society and economy to protect people. Workers finally had power and the government could in fact provide material support to suffering families.
