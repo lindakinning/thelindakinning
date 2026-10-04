@@ -21,6 +21,7 @@ export default function Nav() {
         <li><Link to="/experience" onClick={close}>Experience</Link></li>
         <li><Link to="/writing" onClick={close}>Writing</Link></li>
         <li><Link to="/work" onClick={close}>Portfolio</Link></li>
+        <li><Link to="/closet" onClick={close}>Closet</Link></li>
         <li><a href="mailto:thelindakinning@gmail.com" onClick={close}>Hello</a></li>
       </ul>
     </nav>
