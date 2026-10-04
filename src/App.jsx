@@ -6,6 +6,7 @@ import Experience from './pages/Experience'
 import Writing from './pages/Writing'
 import WritingPost from './pages/WritingPost'
 import Work from './pages/Work'
+import Closet from './pages/Closet'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/writing" element={<Writing />} />
           <Route path="/writing/:slug" element={<WritingPost />} />
+          <Route path="/closet" element={<Closet />} />
         </Routes>
       </main>
       <Footer />
